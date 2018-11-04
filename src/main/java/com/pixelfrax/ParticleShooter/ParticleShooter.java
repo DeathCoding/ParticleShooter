@@ -1,6 +1,7 @@
 package com.pixelfrax.ParticleShooter;
 
 import com.pixelfrax.ParticleShooter.commands.SetupCommand;
+import com.pixelfrax.ParticleShooter.commands.StartCommand;
 import com.pixelfrax.ParticleShooter.handler.Game;
 import com.pixelfrax.ParticleShooter.listener.LobbyListener;
 import com.pixelfrax.ParticleShooter.manager.FileManager;
@@ -36,6 +37,7 @@ public class ParticleShooter extends JavaPlugin {
      */
     private void registerCommands() {
         getCommand("setup").setExecutor(new SetupCommand(cu));
+        getCommand("start").setExecutor(new StartCommand(fm, cu, game));
     }
 
     /*

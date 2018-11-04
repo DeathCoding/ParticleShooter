@@ -33,6 +33,11 @@ public class LobbyThread extends Thread {
         while(GameState.isGameState(GameState.LOBBY)) {
 
             if(game.hasStarted()) {
+                try {
+                    this.join();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
                 return;
             }
 
