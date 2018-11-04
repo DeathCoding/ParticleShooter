@@ -28,6 +28,8 @@ public class LocationUtil {
         cfg = YamlConfiguration.loadConfiguration(f);
     }
 
+    public LocationUtil() { }
+
     /**
      * sets the location
      * @param path

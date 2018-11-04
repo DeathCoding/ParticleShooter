@@ -33,6 +33,7 @@ public class FileManager {
         cfg.addDefault("pluginPrefix", "[PixelShooter]");
         cfg.addDefault("countdown_lobby", 60);
         cfg.addDefault("countdown_warmup", 10);
+        cfg.addDefault("minPlayer", 6);
 
         try {
             cfg.save(f);
